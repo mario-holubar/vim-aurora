@@ -317,7 +317,7 @@ call s:HL('@variable', s:accent_6, s:none, s:none)
 call s:HL('@parameter', s:accent_6, s:none, s:none)
 call s:HL('@punctuation', s:accent_6, s:none, s:none)
 call s:HL('@variable.builtin.rust', s:red, s:none, s:none) " Rust: self
-call s:HL('@type.qualifier.rust', s:red, s:none, s:none) " Rust: mut
+call s:HL('@type.qualifier.rust', s:aqua, s:none, s:none) " Rust: mut
 
 " ----------------------------------------------------------------------------
 " Highlight trailing whitespace
