@@ -309,7 +309,7 @@ call s:HL('rubyMacro', s:blue, s:none, s:none)
 call s:HL('rubySharpBang', s:accent_5, s:none, s:none)
 
 " ----------------------------------------------------------------------------
-" Treesitter syntax
+" Treesitter Syntax:
 " ----------------------------------------------------------------------------
 
 call s:HL('@punctuation', s:accent_6, s:none, s:none)
@@ -320,6 +320,14 @@ call s:HL('@punctuation.special', s:aqua, s:none, s:none) " Rust: #
 call s:HL('@constant.builtin', s:red, s:none, s:none) " Rust: None
 call s:HL('@variable.builtin', s:red, s:none, s:none) " Rust: self
 call s:HL('@type.qualifier', s:blue, s:none, s:none) " Rust: mut
+
+" ----------------------------------------------------------------------------
+" vim-illuminate Syntax:
+" ----------------------------------------------------------------------------
+
+call s:HL('IlluminatedWordText', s:none, s:darkpurple, s:none)
+call s:HL('IlluminatedWordRead', s:none, s:darkpurple, s:none)
+call s:HL('IlluminatedWordWrite', s:none, s:darkpurple, s:none)
 
 " ----------------------------------------------------------------------------
 " Highlight trailing whitespace
