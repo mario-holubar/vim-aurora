@@ -320,6 +320,13 @@ call s:HL('@variable.builtin.rust', s:red, s:none, s:none) " Rust: self
 call s:HL('@type.qualifier.rust', s:red, s:none, s:none) " Rust: mut
 
 " ----------------------------------------------------------------------------
+" Highlight trailing whitespace
+" ----------------------------------------------------------------------------
+
+call s:HL('TrailingWhitespace', s:none, s:darkred, s:none)
+call matchadd('TrailingWhitespace', '\v\s+$')
+
+" ----------------------------------------------------------------------------
 " License:
 " ----------------------------------------------------------------------------
 
