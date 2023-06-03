@@ -185,13 +185,13 @@ call s:HL('String', s:green, s:none, s:none)
 "   Boolean"
 "   Float"
 
-call s:HL('Identifier', s:purple, s:none, s:none)
+call s:HL('Identifier', s:accent_6, s:none, s:none)
 call s:HL('Function', s:yellow, s:none, s:none)
 call s:HL('Statement', s:blue, s:none, s:none)
 "   Conditional"
 "   Repeat"
 "   Label"
-call s:HL('Operator', s:aqua, s:none, s:none)
+call s:HL('Operator', s:blue, s:none, s:none)
 "   Keyword"
 "   Exception"
 
@@ -312,12 +312,14 @@ call s:HL('rubySharpBang', s:accent_5, s:none, s:none)
 " Treesitter syntax
 " ----------------------------------------------------------------------------
 
-call s:HL('@field', s:accent_6, s:none, s:none)
-call s:HL('@variable', s:accent_6, s:none, s:none)
-call s:HL('@parameter', s:accent_6, s:none, s:none)
 call s:HL('@punctuation', s:accent_6, s:none, s:none)
-call s:HL('@variable.builtin.rust', s:red, s:none, s:none) " Rust: self
-call s:HL('@type.qualifier.rust', s:aqua, s:none, s:none) " Rust: mut
+call s:HL('@namespace', s:purple, s:none, s:none)
+call s:HL('@constructor', s:orange, s:none, s:none)
+"call s:HL('@punctuation.bracket', s:yellow, s:none, s:none)
+call s:HL('@punctuation.special', s:aqua, s:none, s:none) " Rust: #
+call s:HL('@constant.builtin', s:red, s:none, s:none) " Rust: None
+call s:HL('@variable.builtin', s:red, s:none, s:none) " Rust: self
+call s:HL('@type.qualifier', s:blue, s:none, s:none) " Rust: mut
 
 " ----------------------------------------------------------------------------
 " Highlight trailing whitespace
