@@ -109,7 +109,8 @@ endfunction
 " Vim Highlighting: (see :help highlight-groups)"
 " ----------------------------------------------------------------------------
 
-call s:HL('Normal', s:accent_6, s:accent_2, s:none)
+" call s:HL('Normal', s:accent_6, s:accent_2, s:none)
+call s:HL('Normal', s:accent_6, s:none, s:none) " Use terminal bg
 
 call s:HL('ColorColumn', s:none, s:accent_3, s:none)
 " call s:HL('Conceal', ...)
@@ -165,7 +166,7 @@ call s:HL('TabLineSel', s:accent_6, s:accent_2, s:none)
 
 call s:HL('Title', s:yellow, s:none, s:none)
 
-call s:HL('Visual', s:none, s:accent_4, s:none)
+call s:HL('Visual', s:none, s:darkblue, s:none)
 " call s:HL('VisualNos', ...)
 
 call s:HL('WarningMsg', s:red, s:none, s:none)
