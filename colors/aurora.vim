@@ -218,6 +218,7 @@ call s:HL('Underlined', s:blue, s:none, s:none)
 call s:HL('Ignore', s:none, s:none, s:none)
 call s:HL('Error', s:red, s:darkred, s:underline)
 call s:HL('Todo', s:darkyellow, s:yellow, s:underline)
+call s:HL('Note', s:darkblue, s:blue, s:underline)
 
 " Quickfix window highlighting
 call s:HL('qfLineNr', s:yellow, s:none, s:none)
