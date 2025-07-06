@@ -219,7 +219,18 @@ call s:HL('Underlined', s:blue, s:none, s:none)
 call s:HL('Ignore', s:none, s:none, s:none)
 call s:HL('Error', s:red, s:darkred, s:underline)
 call s:HL('Todo', s:black, s:orange, s:underline)
-call s:HL('Note', s:black, s:blue, s:underline)
+
+call s:HL('CommentTodo', s:black, s:orange, s:underline)
+call s:HL('CommentWarn', s:black, s:yellow, s:underline)
+call s:HL('CommentErr', s:black, s:red, s:underline)
+call s:HL('CommentNote', s:black, s:blue, s:underline)
+call s:HL('CommentOptim', s:black, s:purple, s:underline)
+
+"call s:HL('DiagnosticVirtualTextError', s:red, s:darkred, s:none)
+"call s:HL('DiagnosticVirtualTextWarn', s:yellow, s:darkyellow, s:none)
+"call s:HL('DiagnosticVirtualTextInfo', s:aqua, s:darkaqua, s:none)
+"call s:HL('DiagnosticVirtualTextHint', s:blue, s:darkblue, s:none)
+"call s:HL('DiagnosticVirtualTextOk', s:green, s:darkgreen, s:none)
 
 " Quickfix window highlighting
 call s:HL('qfLineNr', s:yellow, s:none, s:none)
